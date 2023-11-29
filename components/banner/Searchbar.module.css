@@ -1,0 +1,94 @@
+.searchbody {
+  margin: 0px 2px 0px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  flex: 1;
+  color: rgb(0, 0, 0);
+
+  width: 100%;
+}
+
+.searchbar {
+  min-width: 50%;
+  width: 100%;
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 6px;
+  border: none;
+  transition: outline 0.2s;
+
+  outline: none;
+}
+
+.searchbar:hover {
+  border: none;
+  outline: solid 1px #006aff;
+}
+
+.suggestionlist {
+  background-color: rgb(255, 255, 255);
+  color: rgb(42, 42, 42);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.suggestionitem {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-width: 0 1px 1px 1px;
+  width: 100%;
+  border-radius: 5px 5px 5px 5px;
+  border: solid 1px #e0e0e0;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+
+.loc {
+  margin: 0rem 1rem;
+  font-size: 20px;
+}
+
+.suggestionitem > hr {
+  width: 2rem;
+  rotate: 90deg;
+}
+
+.suggestionitem:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.nationallist {
+  padding: 0;
+  top: 28.5rem;
+  margin: 0px 2px 0px 2px;
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
+.nationallist::-webkit-scrollbar {
+  width: 0rem;
+}
+
+.nationallist::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.nationbody {
+  margin-top: 0px;
+}

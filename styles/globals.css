@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&family=Qwigley&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #092068;
+  --secondary-color: #70c0f2;
+}
+
+/* -----------------------home-section-------------------------------------- */
+
+.card-container {
+  border: none;
+  gap: 4px;
+  border-color: #ccc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.stay {
+  width: 80px;
+  height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #007bff;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  top: -50px;
+  justify-self: end;
+  right: -105px;
+  position: relative;
+}
+
+.card-image {
+  width: 300px;
+  height: 170px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  width: 280px;
+  padding: 10px;
+  gap: 5px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #888;
+  height: 75px;
+  overflow: scroll;
+}
+
+/* Contact button styles */
+.contact-button {
+  display: inline-block;
+  background-color: #007bff; /* Change this to your desired button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3; /* Change this to the hover color you prefer */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: #ffd900; /* Star color (gold) */
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the rating number bold */
+}
+
+.rating span {
+  margin-left: 5px; /* Adjust spacing between rating number and stars */
+}
+.destinations {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 20px;
+}
+.destinations-card {
+  width: 80%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.price {
+  position: relative;
+  bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #888;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* -----------------------footer-section-------------------------------------- */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-section {
+  background: var(--primary-color);
+}
+
+.footer-cta {
+  border-bottom: 1px solid #cccccc96;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-cta .icon {
+  color: var(--secondary-color);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #cccccc;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 28px;
+}
+.footer-social-icon {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 25px;
+}
+.footer-socail-icon-logo {
+  transition: all 0.3s;
+}
+.footer-socail-icon-logo:hover {
+  transform: scale(1.2);
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--secondary-color);
+}
+.footer-widget ul li {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.footer-widget ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-widget ul li a {
+  color: #cccccc;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: var(--primary-color);
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: var(--secondary-color);
+  padding: 13px 20px;
+  border: 1px solid var(--secondary-color);
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #071a50;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: var(--secondary-color);
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* -----------------------navbar-section-------------------------------------- */
+
+.navbar {
+  background-color: var(--primary-color);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.navbar .left a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  padding-left: 35px;
+  font-weight: 500;
+}
+.tab-header {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tab {
+  padding: 5px 25px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(239, 206, 206, 0);
+}
+
+.tab.active {
+  background-color: #ffffff09;
+  border: 2px solid rgb(255, 255, 255);
+
+  color: white;
+}
+.tab:hover {
+  background-color: #ffffff09;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+/* -----------------------booking-section-------------------------------------- */
+
+#booking {
+  width: 100%;
+  margin-top: 20px;
+  height: fit-content;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+#booking::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#93a5cf, #e4efe9);
+  clip-path: circle(20% at left 40%);
+}
+#booking::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#ee9ca7, #ffdde1);
+  clip-path: circle(22% at right 55%);
+}
+
+#booking .booking-wrapper {
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#booking .title {
+  color: #14213d;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+#booking .desc {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Qwigley", cursive;
+  padding-bottom: 20px;
+  color: #006d77;
+}
+
+#booking .booking-body {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Form Container */
+.form-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Form Group */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Label Styles */
+.form-group label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  transition: 0.2s;
+  color: #555;
+}
+
+/* Input Styles */
+.form-group input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  transition: border-bottom-color 0.2s;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button Hover Styles */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+  color: #007bff;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* -----------------------Enquiry-section-------------------------------------- */
+
+.sidebar-contact {
+  position: fixed;
+  top: 60%;
+  left: -350px;
+  transform: translateY(-50%);
+  width: 350px;
+  height: auto;
+  border-radius: 0 0 10px 0;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 1000;
+}
+.sidebar-contact.active {
+  left: 0;
+}
+
+.toggle {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  border-radius: 0 10px 10px 0;
+  text-transform: uppercase;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  cursor: pointer;
+  background: var(--secondary-color);
+  top: 0;
+  right: -48px;
+  line-height: 48px;
+}
+.toggle:before {
+  content: ""; /* Unicode character for the right-pointing arrow */
+  font-family: "Font Awesome";
+  font-size: 18px;
+  color: #fff;
+}
+.toggle.active:before {
+  content: "";
+  font-family: "Font Awesome";
+}
+@media (max-width: 768px) {
+  .sidebar-contact {
+    width: 100%;
+    height: 100%;
+    left: -100%;
+  }
+  .sidebar-contact .toggle {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+  }
+  .sidebar-contact.active .toggle {
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+  }
+  .scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+  .content {
+    padding: 50px 50px;
+  }
+}

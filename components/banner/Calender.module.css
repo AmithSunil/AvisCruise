@@ -1,0 +1,15 @@
+.calender{
+    padding:1rem 1rem;
+    margin: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    flex: 1;
+    width: 100%;
+    color: red;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+}
+
+.colorTextDisabled{
+    color: #000;
+}
+
