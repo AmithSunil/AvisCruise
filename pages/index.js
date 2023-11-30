@@ -1,12 +1,39 @@
-import { Banner, Cards, Destinations, Enquiry, } from "@/components"
+import { Banner, Cards, Destinations, Enquiry, SearchSection, } from "@/components"
 import { firestore } from "@/utils/firebase"
+import { useEffect, useState } from "react"
+ 
 
 export default function Home({ CardsData }) {
+  
+  const [nationality, changeLoc] = useState('');
+  const [location, changeNat] = useState('');
+  let ar=[];
+
+
+
+  const sort = () => {
+    const cardlist= CardsData.filter((card) =>
+      card.name.toLowerCase().includes(location.toLowerCase())
+    );
+    ar.clear();
+    ar.append(cardlist);
+  };
+
+  
+  const buttonClicked =()=>{
+    sort();
+    changeLoc(location)
+    changeNat(nationality)
+    console.log( nationality, location);
+    console.log('Button Clicked');
+  }
+  
   return (
     <>
       <Banner />
       <Enquiry />
-      <Destinations CardsData={CardsData} />
+      <SearchSection buttonClicked={buttonClicked} nationality={changeNat} location={changeLoc} />
+      <Destinations CardsData={ar} />
     </>
   )
 }

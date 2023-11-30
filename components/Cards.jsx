@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Image from "next/image"
+import { SearchSection } from "."
 
 const Cards = ({ name, image, rating, desc, card, onSelect }) => {
   const handleBookNow = () => {
@@ -9,7 +10,7 @@ const Cards = ({ name, image, rating, desc, card, onSelect }) => {
   return (
     <>
       <div class="card-container">
-        <div class="card-image">
+         <div class="card-image">
           <Image
             src={`https://firebasestorage.googleapis.com/v0/b/destinations-6c6a6.appspot.com/o/${image}`}
             width={300}

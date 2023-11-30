@@ -4,11 +4,12 @@ import React, { useState } from "react"
 import Cards from "./Cards"
 import Booking from "./Booking"
 
-const Destinations = ({ CardsData }) => {
+const Destinations = ({ CardsData}) => {
   const [selectedCard, setSelectedCard] = useState(null)
   const handleSubmit = card => {
     setSelectedCard(card)
   }
+
 
   return (
     <>
@@ -32,7 +33,7 @@ const Destinations = ({ CardsData }) => {
             ))}
         </div>
       </div>
-      <Booking selectedCard={selectedCard} />
+      <Booking selectedCard={selectedCard}  />
     </>
   )
 }

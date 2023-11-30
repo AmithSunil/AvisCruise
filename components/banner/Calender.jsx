@@ -1,31 +1,14 @@
-// import 'antd/dist/antd.css';
-import { DatePicker } from "antd"
-import { useState } from "react"
-import moment from "moment"
-const { RangePicker } = DatePicker
-import styles from "./Calender.module.css"
+import React, { useState } from 'react';
+import DatePicker from 'react-date-picker';
 
-const Calender = () => {
-  const [dates, setDates] = useState([])
-  console.log(dates)
+function Calender() {
+  const [value, onChange] = useState(new Date());
 
   return (
-      <RangePicker
-        className={styles.calender}
-        onChange={values => {
-          if (values === null) {
-            setDates([])
-            return
-          }
-
-          setDates(
-            values.map(item => {
-              return moment(item).format("YYYY-DD-MM")
-            })
-          )
-        }}
-      />
-  )
+    <div>
+      <DatePicker onChange={onChange} value={value} />
+    </div>
+  );
 }
 
 export default Calender;
