@@ -13,6 +13,10 @@ const Destinations = ({ CardsData }) => {
   return (
     <>
       <div className="destinations">
+        <div>
+          <h1 className="title">Fix Departure</h1>
+          <p className="desc">- Fix your Destination</p>
+        </div>
         <div className="destinations-card">
           {CardsData &&
             CardsData.map((card, index) => (

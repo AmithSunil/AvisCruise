@@ -1,4 +1,4 @@
-import { Banner, Cards, Destinations, Enquiry, Swiper } from "@/components"
+import { Banner, Cards, Destinations, Enquiry, } from "@/components"
 import { firestore } from "@/utils/firebase"
 
 export default function Home({ CardsData }) {
@@ -6,7 +6,6 @@ export default function Home({ CardsData }) {
     <>
       <Banner />
       <Enquiry />
-      <Swiper />
       <Destinations CardsData={CardsData} />
     </>
   )

@@ -11,15 +11,12 @@ const SwiperCard = ({ imageSrc, title, price, location, text }) => {
         />
       </div>
       <div className={style.tbody}>
-        <h2 className={style.title}>{title}</h2>
-        <p className={style.location}>{location}</p>
-        <p className={style.text}>{text}</p>
+        <div className={style.text}>
+          <h2>{title}</h2>
+          <p>{price}</p>
+        </div>
         <div className={style.price_line}>
-          <hr />
-          <div className={style.price2}>
-            <p className={style.price}>{price}</p>
-            <button class="contact-button">Contact Us</button>
-          </div>
+          <button class="contact-button">Contact Us</button>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.4.0",
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.7.17",
     "antd": "^5.9.3",
     "bootstrap-icons": "^1.11.1",

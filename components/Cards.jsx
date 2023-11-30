@@ -5,6 +5,7 @@ const Cards = ({ name, image, rating, desc, card, onSelect }) => {
   const handleBookNow = () => {
     onSelect(card)
   }
+
   return (
     <>
       <div class="card-container">
@@ -16,10 +17,11 @@ const Cards = ({ name, image, rating, desc, card, onSelect }) => {
             objectFit="cover"
             alt="Circular Image"
           />
+          <div class="fade"></div>
         </div>
 
         <div class="card-content">
-        <div className="stay">7D/8N</div>
+          <div className="stay">7D/8N</div>
           <h1 class="card-title">{name}</h1>
           <p style={{ fontSize: 15, fontWeight: 400, color: "#888" }}>
             Acommodation | Meals | Visa
