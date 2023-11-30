@@ -7,24 +7,24 @@ export default function Home({ CardsData }) {
   
   const [nationality, changeLoc] = useState('');
   const [location, changeNat] = useState('');
-  let ar=[];
+
+ const [cardlist, setCardlist] = useState(CardsData);
 
 
+ const sort = () => {
+  const cardlist = CardsData.filter((card) => {
+    return card.name.toLowerCase().includes(String);
+  });
 
-  const sort = () => {
-    const cardlist= CardsData.filter((card) =>
-      card.name.toLowerCase().includes(location.toLowerCase())
-    );
-    ar.clear();
-    ar.append(cardlist);
-  };
+  console.log(cardlist);
+  setCardlist(cardlist);
+};
+
 
   
   const buttonClicked =()=>{
     sort();
-    changeLoc(location)
-    changeNat(nationality)
-    console.log( nationality, location);
+    console.log( nationality.label, location.label);
     console.log('Button Clicked');
   }
   
@@ -33,7 +33,7 @@ export default function Home({ CardsData }) {
       <Banner />
       <Enquiry />
       <SearchSection buttonClicked={buttonClicked} nationality={changeNat} location={changeLoc} />
-      <Destinations CardsData={ar} />
+      <Destinations CardsData={cardlist} />
     </>
   )
 }

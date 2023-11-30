@@ -7,7 +7,7 @@ const SearchSection = ({location,nationality,buttonClicked}) => {
 
   const handleloc = (event) => {
       location(event);
-    // changeLoc(event);
+
 };
 
 const handlenat = (event) => {

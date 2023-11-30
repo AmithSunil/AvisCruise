@@ -4,8 +4,8 @@ import styles from "./Searchbar.module.css";
 import { useState } from "react";
 
 const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
+  { value: "finland", label: "finland" },
+  { value: "india", label: "india" },
   { value: "vanilla", label: "Vanilla" },
 ];
 
