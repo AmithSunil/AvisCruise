@@ -38,7 +38,7 @@
   justify-content: space-around;
   align-items: flex-end;
   border-radius: 30px;
-
+  flex-wrap: wrap;
 }
 .image {
   margin: 0;

@@ -220,7 +220,7 @@ const Booking = ({ selectedCard }) => {
                   </table>
                 </div>
               </div>
-              <div className="pb-5 w-50">
+              <div className="test">
                 <div className="text-center">
                   <h4>Contact us</h4>
                 </div>

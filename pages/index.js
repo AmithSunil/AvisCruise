@@ -10,7 +10,6 @@ export default function Home({ CardsData, TrendingData }) {
   }
   return (
     <>
-      <Banner />
       <Enquiry />
       <Swiper TrendingData={TrendingData} handleSubmit={handleSubmit} />
       <Destinations
