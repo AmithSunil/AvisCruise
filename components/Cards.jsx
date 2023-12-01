@@ -1,7 +1,16 @@
 import React, { useState } from "react"
 import Image from "next/image"
 
-const Cards = ({ name, image, rating, desc, card, onSelect }) => {
+const Cards = ({
+  name,
+  image,
+  rating,
+  desc,
+  price,
+  duration,
+  card,
+  onSelect,
+}) => {
   const handleBookNow = () => {
     onSelect(card)
   }
@@ -21,7 +30,7 @@ const Cards = ({ name, image, rating, desc, card, onSelect }) => {
         </div>
 
         <div class="card-content">
-          <div className="stay">7D/8N</div>
+          <div className="stay">{duration}</div>
           <h1 class="card-title">{name}</h1>
           <p style={{ fontSize: 15, fontWeight: 400, color: "#888" }}>
             Acommodation | Meals | Visa
@@ -34,8 +43,8 @@ const Cards = ({ name, image, rating, desc, card, onSelect }) => {
           <div className="price">
             <p style={{ fontSize: 15, fontWeight: 400 }}>
               Starting @ <br />
-              <span style={{ fontSize: 35, fontWeight: 600, color: "#111" }}>
-                ₹1000
+              <span style={{ fontSize: 28, fontWeight: 600, color: "#111" }}>
+                ₹{price}
               </span>{" "}
             </p>
             <a href="#booking">

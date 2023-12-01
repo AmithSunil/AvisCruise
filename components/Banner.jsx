@@ -9,7 +9,6 @@ import Swiper from "./RSwiper"
 const Banner = () => {
   return (
     <div className={styles.ban}>
-      <Swiper />
       <div className={styles.banner}>
         {/* <Searchbar />
         <Calender />

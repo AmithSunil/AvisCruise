@@ -220,9 +220,7 @@ const Booking = ({ selectedCard }) => {
                   </table>
                 </div>
               </div>
-
-              <div style={{ height: 100, backgroundColor: "black" }}></div>
-              <div className="pb-5">
+              <div className="pb-5 w-50">
                 <div className="text-center">
                   <h4>Contact us</h4>
                 </div>

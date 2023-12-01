@@ -1,14 +1,19 @@
-// Destinations.jsx
-
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Cards from "./Cards"
-import Booking from "./Booking"
 
-const Destinations = ({ CardsData }) => {
-  const [selectedCard, setSelectedCard] = useState(null)
-  const handleSubmit = card => {
-    setSelectedCard(card)
-  }
+const Destinations = ({ CardsData, handleSubmit, selectedCard }) => {
+  const [sortedData, setSortedData] = useState([])
+
+  useEffect(() => {
+    const sortDataReverse = () => {
+      const sortedArray = [...CardsData].sort((a, b) => {
+        return b.name.localeCompare(a.name) // For strings
+      })
+      setSortedData(sortedArray)
+    }
+
+    sortDataReverse()
+  }, [CardsData])
 
   return (
     <>
@@ -18,21 +23,22 @@ const Destinations = ({ CardsData }) => {
           <p className="desc">- Fix your Destination</p>
         </div>
         <div className="destinations-card">
-          {CardsData &&
-            CardsData.map((card, index) => (
+          {sortedData &&
+            sortedData.map((card, index) => (
               <Cards
                 key={index}
                 name={card.name}
                 image={card.image}
                 rating={card.rating}
                 desc={card.desc}
+                price={card.price}
+                duration={card.duration}
                 card={card}
                 onSelect={handleSubmit}
               />
             ))}
         </div>
       </div>
-      <Booking selectedCard={selectedCard} />
     </>
   )
 }
