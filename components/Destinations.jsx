@@ -17,7 +17,7 @@ const Destinations = ({ CardsData, handleSubmit, selectedCard }) => {
 
   return (
     <>
-      <div className="destinations">
+      <div id="destinations">
         <div>
           <h1 className="title">Fix Departure</h1>
           <p className="desc">- Fix your Destination</p>

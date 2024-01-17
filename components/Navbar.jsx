@@ -27,9 +27,9 @@ const Navbar = () => {
         </div> */}
         <div className="right"></div>
       </div>
-      <div className="tab-wrapper">
+      {/* <div className="tab-wrapper">
         <TabSection />
-      </div>
+      </div> */}
     </div>
   )
 }

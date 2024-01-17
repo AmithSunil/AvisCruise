@@ -17,6 +17,7 @@ const SwiperCard = ({ title, image, price, onSelect, slide }) => {
         <div className={style.trending}>TRENDING</div>
         <div className={style.text}>
           <h2
+            className="small-title"
             style={{
               textTransform: "uppercase",
               fontWeight: 600,
@@ -28,6 +29,7 @@ const SwiperCard = ({ title, image, price, onSelect, slide }) => {
           <h2>
             INR{" "}
             <span
+              className="small-title"
               style={{
                 background: "#ffb703",
                 color: "black",
